@@ -6,6 +6,6 @@ h = Integer(gets.chomp)
 
 square = 0.5*h*a
 
-puts "#Площадь треугольника равна #{square}"
+puts "#Площадь треугольника равна  #{square}"
 
 
