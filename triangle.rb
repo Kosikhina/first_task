@@ -10,7 +10,7 @@ c = Integer(gets.chomp)
 g = [a,b,c]
 g.sort!
 f=g.map {|x| x * x}
-puts "#{f}"
+
 if
 f[2]==f[1]+f[0]
 puts "Треугольник прямоугольный"
