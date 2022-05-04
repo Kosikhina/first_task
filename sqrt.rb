@@ -1,31 +1,26 @@
 puts "Введите 1й коэффициент"
-a = Integer(gets.chomp)
+ a = gets.chomp.to_i
 
 puts "Введите 2й коэффициент"
-b = Integer(gets.chomp)
+ b = gets.chomp.to_i
 
 puts "Введите 3й коэффициент"
-c = Integer(gets.chomp)
+ c = gets.chomp.to_i
 
-d = b**2 - 4*a*c
+d = b**2 - 4 * a * c
 
-if
-d>0
-C=Math.sqrt(d)
-x1=(-b+C)/2*a
-x2=(-b-C)/2*a
+ if d > 0
+   s = Math.sqrt(d)
+   x1 = ( - b + s ) / 2 * a 
+   x2 = ( - b - s ) / 2 * a
+   puts "Дискриминант = # { s }, корень1 = # { x1 }, корень2 = # { x2 }"
 
-puts "Дискриминант= #{C},корень1= #{x1}, корень2=#{x2}"
+ elsif d == 0
+  s=Math.sqrt(d)
+  x1 = (- b + s) / 2 * a 
+  puts "Дискриминант = # { s }, корень = # { x1 }"
 
-elsif 
-d==0
-C=Math.sqrt(d)
-x1=(-b+C)/2*a
- puts " Дискриминант= #{C},корень= #{x1}"
-else
-
- puts "Корней нет!"
-
+ else
+  puts "Корней нет!"
 
 end
-
